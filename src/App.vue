@@ -1,28 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <directories></directories>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import directories from './components/Directories.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    'directories' : directories
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111111;
+}
+#app {
+  font-family: 'Vidaloka', serif;
+  color: #FFF;
+}
+
 </style>
