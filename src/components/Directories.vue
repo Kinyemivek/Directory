@@ -268,7 +268,7 @@ export default {
         }
     }
     /* 414px */
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 400px) {
         .column, .column-2 {
             padding-left: 10%;
         }
