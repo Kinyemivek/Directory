@@ -267,22 +267,49 @@ export default {
             height: auto;
         }
     }
-    /* 414px */
+    /* 400px */
     @media screen and (max-width: 400px) {
-        .column, .column-2 {
-            padding-left: 10%;
+        .column {
+            float: left;
+            width: 50%;
+            padding-left: 2%;
+            margin-bottom: 2em;
+            height: auto;
+        }
+        .column-2 {
+            position: relative;
+            margin-bottom: 2em;
+            padding-left: 2%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: auto;
         }
     }
-    /* 375px */
-    @media screen and (max-width: 375px) {
-        .column, .column-2 {
-            padding-left: 8%;
+    /* 380px */
+    @media screen and (max-width: 380px) {
+        .column {
+            float: left;
+            width: 50%;
+            padding-left: 2%;
+            margin-bottom: 2em;
+            height: auto;
+        }
+        .column-2 {
+            position: relative;
+            margin-bottom: 2em;
+            padding-left: 2%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: auto;
         }
     }
-    /* 360px */
-    @media screen and (max-width: 360px) {
+    
+    /* 370px */
+    @media screen and (max-width: 370px) {
         .column, .column-2 {
-            padding-left: 6%;
+            padding-left: 2%;
         }
     }
     /* 320px */
