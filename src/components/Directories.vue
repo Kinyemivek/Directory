@@ -270,7 +270,7 @@ export default {
     /* 414px */
     @media screen and (max-width: 414px) {
         .column, .column-2 {
-            padding-left: 12% !;
+            padding-left: 10%;
         }
     }
     /* 375px */
