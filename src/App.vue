@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
 
 * {
   box-sizing: border-box;
@@ -25,11 +25,10 @@ export default {
 body {
   margin: 0;
   padding: 0;
-  background-color: #111111;
+  background-color: #1F4068;
 }
 #app {
-  font-family: 'Vidaloka', serif;
-  color: #FFF;
+  font-family: 'Work Sans', sans-serif;
+  color: #EBECF1;
 }
-
 </style>

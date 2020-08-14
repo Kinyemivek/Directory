@@ -119,13 +119,13 @@ export default {
 
 <style scoped>
 
-    @import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
 
     .navbar {
         position: relative;
         width: 100%;
         height: auto;
-        background: #111;
+        background-color: #111;
         margin: 0;
         padding: 0;
     }
@@ -137,7 +137,7 @@ export default {
     }
     .country-settings {
         padding: 20px;
-        font-family: 'Vidaloka', serif;
+        font-family: 'Work Sans', sans-serif;
     }
     .select  {
         width: 20em;
@@ -145,16 +145,16 @@ export default {
         display: block;
         margin-top: 15px;
         padding-left: 1em;
-        border: 2px solid #DDD;
-        box-shadow: 5px 10px 8px #111;
+        border: 2px solid #1B1C25;
+        box-shadow: 5px 10px 8px;
         line-height: 2em;
         outline: none;
         border-radius: 30px;
-        font-family: 'Vidaloka', serif;
+        font-family: 'Work Sans', sans-serif;
         font-size: 18px;
         background: url('https://img.icons8.com/ios-filled/50/000000/chevron-down.png') no-repeat right;
         background-size: 22px 22px;
-        background-color: #EEE;
+        background-color: #EBECF1;
         cursor: pointer;
         -webkit-appearance: none;
         background-position-x: 17.8em;
@@ -162,17 +162,21 @@ export default {
     .count-option {
         display: block;
         margin-left: 20px;
-        font-family: 'Vidaloka', serif;
+        font-family: 'Work Sans', sans-serif;
     }
     .column {
-        width: 50%;
-        padding-left: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
         margin-bottom: 2em;
         height: auto;
     }
     .column-2 {
-        width: 50%;
-        padding-left: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
         margin-bottom: 2em;
         height: auto;
     }
@@ -183,8 +187,8 @@ export default {
     }
     .empty {
         border: 2px solid;
-        background: rgb(226, 64, 64);
-        color: #fff;
+        background: #1F4068;
+        color: #1B1C25;
         width: 20em;
         height: 3em;
         padding-left: 1em;
@@ -220,41 +224,24 @@ export default {
     @media screen and (max-width: 768px) {
         .column {
             float: left;
-            width: 50%;
-            padding-left: 8%;
-        }
-        .column-2 {
-            float: left;
-            width: 50%;
-            padding-left: 10%;
-        }
-    }
-    /* 575px */
-    @media screen and (max-width: 575px) {
-        .column {
-            float: left;
-            width: 50%;
-            padding-left: 8%;
-            margin-bottom: 2em;
-            height: auto;
-        }
-        .column-2 {
-            position: relative;
-            margin-bottom: 2em;
-            padding-left: 8%;
-            left: 50%;
-            transform: translateX(-50%);
             width: 100%;
-            height: auto;
+            padding-left: 8%;
+        }
+        .column-2 {
+            float: left;
+            width: 100%;
+            padding-left: 8%;
         }
     }
-     /* 581px */
+    /* 581px */
     @media screen and (max-width: 581px) {
         .column {
-            float: left;
-            width: 50%;
-            padding-left: 8%;
+            position: relative;
             margin-bottom: 2em;
+            padding-left: 8%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
             height: auto;
         }
         .column-2 {
@@ -267,12 +254,13 @@ export default {
             height: auto;
         }
     }
+     
     /* 400px */
     @media screen and (max-width: 400px) {
         .column {
             float: left;
             width: 50%;
-            padding-left: 2%;
+            padding-left: 4%;
             margin-bottom: 2em;
             height: auto;
         }
@@ -306,10 +294,21 @@ export default {
         }
     }
     
-    /* 370px */
-    @media screen and (max-width: 370px) {
+    /* 383px */
+    @media screen and (max-width: 383px) {
+        .select {
+            margin-bottom: 2em;
+            padding-left: 6%;
+            width: 100%;
+            background-position-x: 90%;
+            left: 50%;
+        }
+        .empty {
+            width: 50em;
+        }
         .column, .column-2 {
-            padding-left: 2%;
+            padding-left: 6%;
+            width: 100%;
         }
     }
     /* 320px */
@@ -326,6 +325,35 @@ export default {
         }
         .empty {
             width: 17em;
+        }
+    }
+     /* 297px */
+    @media screen and (max-width: 297px) {
+        .select {
+            margin-bottom: 2em;
+            padding-left: 8%;
+            width: 100%;
+            background-position-x: 90%;
+            left: 50%;
+        }
+        .empty {
+            width: 50em;
+        }
+        .column {
+            margin-bottom: 2em;
+            padding-left: 8%;
+            left: 50%;
+            width: 100%;
+            height: auto;
+        }
+        .column-2 {
+            position: relative;
+            margin-bottom: 2em;
+            padding-left: 4%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: auto;
         }
     }
 </style>
